@@ -1,8 +1,7 @@
-const int encoderPinA = 2;  // Connect the A channel to digital pin 2
-const int encoderPinB = 3;  // Connect the B channel to digital pin 3
+const int encoderPinA = 2;
+const int encoderPinB = 3; 
 
-volatile int count = 0;     // Counter variable, declared as volatile for interrupt handling
-
+volatile int count = 0;     
 void setup() {
   pinMode(encoderPinA, INPUT_PULLUP);
   pinMode(encoderPinB, INPUT_PULLUP);
@@ -14,8 +13,7 @@ void setup() {
 }
 
 void loop() {
-  // Your main code here
-  // You can use the count variable to do further calculations or display the count value
+  
 }
 
 void handleEncoder() {
